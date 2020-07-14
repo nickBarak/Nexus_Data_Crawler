@@ -7,7 +7,7 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'mock_nexus_2'
+BOT_NAME = 'mock_nexus'
 
 SPIDER_MODULES = ['mock_nexus_2.spiders']
 NEWSPIDER_MODULE = 'mock_nexus_2.spiders'
@@ -62,9 +62,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'mock_nexus_2.pipelines.MockNexus2Pipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'mock_nexus_2.pipelines.MockNexusPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

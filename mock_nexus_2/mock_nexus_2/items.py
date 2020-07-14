@@ -4,10 +4,10 @@
 # https://docs.scrapy.org/en/latest/topics/items.html
 
 import scrapy
-from scrapy import Field
+from scrapy import Field, Item
 
 
-class MockNexusItem(scrapy.Item):
+class MockNexusItem(Item):
     category = Field()
     subcategory = Field()
     full_thumbnail = Field()
