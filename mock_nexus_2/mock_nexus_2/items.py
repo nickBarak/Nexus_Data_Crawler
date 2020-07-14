@@ -18,3 +18,9 @@ class MockNexusItem(Item):
     description = Field()
     src_url = Field()
     content = Field()    
+
+
+class AuthorItem(Item):
+    name = Field()
+    biography = Field()
+    portrait = Field()
